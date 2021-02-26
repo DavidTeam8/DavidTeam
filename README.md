@@ -17,7 +17,7 @@
 # <p align="center" > `killall screen;cd DavidTeam;./ABS`
 # <p align="center" > ┉ ≈ ┉ ≈ ┉ ≈ ┉ ≈ ┉
 # <p align="center" > ⤈ ↫ كود حذف التنصيب ↬ ⤈
-# <p align="center" > `rm -rf DevProx`
+# <p align="center" > `rm -rf DavidTeam`
 # <p align="center" > ┉ ≈ ┉ ≈ ┉ ≈ ┉ ≈ ┉
 # <p align="center" > ⤈ ↫ كود تغيير ايدي ومعرف المطور الاساسي وتوكن البوت ↬ ⤈
 # <p align="center" > `cd DavidTeam;rm -rf config.lua;./ABS`
