@@ -22,5 +22,3 @@
 # <p align="center" > ⤈ ↫ كود تغيير ايدي ومعرف المطور الاساسي وتوكن البوت ↬ ⤈
 # <p align="center" > `cd DavidTeam;rm -rf config.lua;./ABS`
 # <p align="center" > ┉ ≈ ┉ ≈ ┉ ≈ ┉ ≈ ┉
-# <p align="center" > [Source Prog](https://t.me/IQ_ABS) • [مبرمج السورس](https://t.me/IQ_ABS)
-# <p align="center" > ┉ ≈ ┉ ≈ ┉ ≈ ┉ ≈ ┉
