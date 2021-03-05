@@ -116,7 +116,12 @@ return config
 end  
 Load_David() 
 print("\27[36m"..[[                                           
-Source David
+                                     ██
+███████       ██      ██       ██          ███████
+██    ██    ██  ██     ██     ██     ██    ██     ██     
+██    ██   ████████      ██  ██      ██    ██     ██
+███████   ██      ██       ██        ██    ███████
+
 ]]..'\27[m')
 sudos = dofile("./config.lua")
 DevId = sudos.SUDO
