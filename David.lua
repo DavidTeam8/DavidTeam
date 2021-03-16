@@ -116,12 +116,7 @@ return config
 end  
 Load_David() 
 print("\27[36m"..[[                                           
-                                     ██
-███████       ██      ██       ██          ███████
-██    ██    ██  ██     ██     ██     ██    ██     ██     
-██    ██   ████████      ██  ██      ██    ██     ██
-███████   ██      ██       ██        ██    ███████
-
+Source David
 ]]..'\27[m')
 sudos = dofile("./config.lua")
 DevId = sudos.SUDO
@@ -153,8 +148,6 @@ local var = false
 for k,v in pairs(SudoUsers) do 
 if msg.sender_user_id_ == v then 
 var = true 
-if msg.sender_user_id_ == v then 
-var = true
 end end 
 if msg.sender_user_id_ == tonumber(DevId) then 
 var = true 
@@ -164,11 +157,6 @@ end
 function SudoId(user_id) 
 local var = false 
 for k,v in pairs(SudoUsers) do 
-if user_id == v then 
-var = true
-function bot_id(user_id) 
-local var = false 
-for k,v in pairs(user_id) do 
 if user_id == v then 
 var = true 
 end end 
@@ -553,7 +541,7 @@ function CatchName(Name,Num)
 ChekName = utf8.sub(Name,0,Num) Name = ChekName return Name..'' 
 end
 local AbsRank = function(msg) if SudoId(msg.sender_user_id_) then DavidTEAM  = "المطور" elseif SudoId(msg.sender_user_id_) then DavidTEAM = "المطور" elseif SudoBot(msg) then DavidTEAM = "المطور" elseif ManagerAll(msg) then DavidTEAM = "المدير" elseif AdminAll(msg) then DavidTEAM = "الادمن" elseif AbsConstructor(msg) then DavidTEAM = "المنشئ" elseif BasicConstructor(msg) then DavidTEAM = "المنشئ" elseif Constructor(msg) then DavidTEAM = "المنشئ" elseif Manager(msg) then DavidTEAM = "المدير" elseif Admin(msg) then DavidTEAM = "الادمن" else DavidTEAM = "العضو" end return DavidTEAM end
-function IdRank(user_id,chat_id) if tonumber(user_id) == tonumber(1558668590) then DavidTEAM = 'مبرمج السورس' elseif tonumber(user_id) == tonumber(David) then DavidTEAM = 'البوت' elseif SudoId(user_id) then DavidTEAM = 'المطور الاساسي' elseif DevAbs:sismember(David..'Abs:Sudo:T', user_id) then DavidTEAM = DevAbs:get(David..'Abs:Sudo:T'..chat_id) or 'المطور الاساسي ²' elseif DevAbs:sismember(David..'Abs:SudoBot:', user_id) then DavidTEAM = DevAbs:get(David.."Abs:SudoBot:Rd"..chat_id) or 'المطور' elseif DevAbs:sismember(David..'Abs:ManagerAll:', user_id) then DavidTEAM = DevAbs:get(David.."Abs:Managers:Rd"..chat_id) or 'المدير العام' elseif DevAbs:sismember(David..'Abs:AdminAll:', user_id) then DavidTEAM = DevAbs:get(David.."Abs:Admins:Rd"..chat_id) or 'الادمن العام' elseif DevAbs:sismember(David..'Abs:VipAll:', user_id) then DavidTEAM = DevAbs:get(David.."Abs:VipMem:Rd"..chat_id) or 'المميز العام' elseif DevAbs:sismember(David..'Abs:AbsConstructor:'..chat_id, user_id) then DavidTEAM = 'منشئ المجموعه' elseif DevAbs:sismember(David..'Abs:BasicConstructor:'..chat_id, user_id) then DavidTEAM = DevAbs:get(David.."Abs:BasicConstructor:Rd"..chat_id) or 'المنشئ الاساسي' elseif DevAbs:sismember(David..'Abs:Constructor:'..chat_id, user_id) then DavidTEAM = DevAbs:get(David.."Abs:Constructor:Rd"..chat_id) or 'المنشئ' elseif DevAbs:sismember(David..'Abs:Managers:'..chat_id, user_id) then DavidTEAM = DevAbs:get(David.."Abs:Managers:Rd"..chat_id) or 'المدير' elseif DevAbs:sismember(David..'Abs:Admins:'..chat_id, user_id) then DavidTEAM = DevAbs:get(David.."Abs:Admins:Rd"..chat_id) or 'الادمن' elseif DevAbs:sismember(David..'Abs:VipMem:'..chat_id, user_id) then  DavidTEAM = DevAbs:get(David.."Abs:VipMem:Rd"..chat_id) or 'المميز' elseif DevAbs:sismember(David..'Abs:Cleaner:'..chat_id, user_id) then  DavidTEAM = DevAbs:get(David.."Abs:Cleaner:Rd"..chat_id) or 'المنظف' else DavidTEAM = DevAbs:get(David.."Abs:mem:Rd"..chat_id) or 'العضو' end return DavidTEAM end
+function IdRank(user_id,chat_id) if tonumber(user_id) == tonumber(1558668590) then DavidTEAM = 'مبرمج السورس' elseif tonumber(user_id) == tonumber(David) then DavidTEAM = 'البوت' elseif SudoId(user_id) then DavidTEAM = 'المطور الاساسي' elseif DevAbs:sismember(David..'Abs:SudoBot:', user_id) then DavidTEAM = DevAbs:get(David.."Abs:SudoBot:Rd"..chat_id) or 'المطور' elseif DevAbs:sismember(David..'Abs:ManagerAll:', user_id) then DavidTEAM = DevAbs:get(David.."Abs:Managers:Rd"..chat_id) or 'المدير العام' elseif DevAbs:sismember(David..'Abs:AdminAll:', user_id) then DavidTEAM = DevAbs:get(David.."Abs:Admins:Rd"..chat_id) or 'الادمن العام' elseif DevAbs:sismember(David..'Abs:VipAll:', user_id) then DavidTEAM = DevAbs:get(David.."Abs:VipMem:Rd"..chat_id) or 'المميز العام' elseif DevAbs:sismember(David..'Abs:AbsConstructor:'..chat_id, user_id) then DavidTEAM = 'منشئ المجموعه' elseif DevAbs:sismember(David..'Abs:BasicConstructor:'..chat_id, user_id) then DavidTEAM = DevAbs:get(David.."Abs:BasicConstructor:Rd"..chat_id) or 'المنشئ الاساسي' elseif DevAbs:sismember(David..'Abs:Constructor:'..chat_id, user_id) then DavidTEAM = DevAbs:get(David.."Abs:Constructor:Rd"..chat_id) or 'المنشئ' elseif DevAbs:sismember(David..'Abs:Managers:'..chat_id, user_id) then DavidTEAM = DevAbs:get(David.."Abs:Managers:Rd"..chat_id) or 'المدير' elseif DevAbs:sismember(David..'Abs:Admins:'..chat_id, user_id) then DavidTEAM = DevAbs:get(David.."Abs:Admins:Rd"..chat_id) or 'الادمن' elseif DevAbs:sismember(David..'Abs:VipMem:'..chat_id, user_id) then  DavidTEAM = DevAbs:get(David.."Abs:VipMem:Rd"..chat_id) or 'المميز' elseif DevAbs:sismember(David..'Abs:Cleaner:'..chat_id, user_id) then  DavidTEAM = DevAbs:get(David.."Abs:Cleaner:Rd"..chat_id) or 'المنظف' else DavidTEAM = DevAbs:get(David.."Abs:mem:Rd"..chat_id) or 'العضو' end return DavidTEAM end
 function RankChecking(user_id,chat_id)
 if SudoId(user_id) then
 var = true  
@@ -4063,84 +4051,6 @@ end
 resolve_username(rem[2],remm)
 end
 --       Set SudoBot      --
-if text == ('رفع مطور ثانوي') and tonumber(msg.reply_to_message_id_) ~= 0 and VIP_DeV(msg) then
-function Function_BLACKBOTSS(extra, result, success)
-database:sadd(bot_id.."DEV:Sudo:T", result.sender_user_id_)
-Reply_Status(msg,result.sender_user_id_,"reply","⌔︙تم ترقيته مطور ثانوي في البوت")  
-end
-tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumber(msg.reply_to_message_id_)}, Function_BLACKBOTSS, nil)
-return false 
-end
-if text and text:match("^رفع مطور ثانوي @(.*)$") and VIP_DeV(msg) then
-local username = text:match("^رفع مطور ثانوي @(.*)$")
-function Function_BLACKBOTSS(extra, result, success)
-if result.id_ then
-if (result and result.type_ and result.type_.ID == "ChannelChatInfo") then
-send(msg.chat_id_,msg.id_,"⌔︙عذرا عزيزي المستخدم هاذا معرف قناة يرجى استخدام الامر بصوره صحيحه !")   
-return false 
-end      
-database:sadd(bot_id.."DEV:Sudo:T", result.id_)
-Reply_Status(msg,result.id_,"reply","⌔︙تم ترقيته مطور ثانوي في البوت")  
-else
-send(msg.chat_id_, msg.id_,"⌔︙لا يوجد حساب بهاذا المعرف")
-end
-end
-tdcli_function ({ID = "SearchPublicChat",username_ = username}, Function_BLACKBOTSS, nil)
-return false 
-end
-if text and text:match("^رفع مطور ثانوي (%d+)$") and VIP_DeV(msg) then
-local userid = text:match("^رفع مطور ثانوي (%d+)$")
-database:sadd(bot_id.."DEV:Sudo:T", userid)
-Reply_Status(msg,userid,"reply","⌔︙تم ترقيته مطور ثانوي في البوت")  
-return false 
-end
-if text == ("تنزيل مطور ثانوي") and tonumber(msg.reply_to_message_id_) ~= 0 and VIP_DeV(msg) then
-function Function_BLACKBOTSS(extra, result, success)
-database:srem(bot_id.."DEV:Sudo:T", result.sender_user_id_)
-Reply_Status(msg,result.sender_user_id_,"reply","⌔︙تم تنزيله من المطور ثانويين")  
-end
-tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumber(msg.reply_to_message_id_)}, Function_BLACKBOTSS, nil)
-return false 
-end
-if text and text:match("^تنزيل مطور ثانوي @(.*)$") and VIP_DeV(msg) then
-local username = text:match("^تنزيل مطور ثانوي @(.*)$")
-function Function_BLACKBOTSS(extra, result, success)
-if result.id_ then
-database:srem(bot_id.."DEV:Sudo:T", result.id_)
-Reply_Status(msg,result.id_,"reply","⌔︙تم تنزيله من المطور ثانويين")  
-else
-send(msg.chat_id_, msg.id_,"⌔︙لا يوجد حساب بهاذا المعرف")
-end
-end
-tdcli_function ({ID = "SearchPublicChat",username_ = username}, Function_BLACKBOTSS, nil)
-return false
-end  
-if text and text:match("^تنزيل مطور ثانوي (%d+)$") and VIP_DeV(msg) then
-local userid = text:match("^تنزيل مطور ثانوي (%d+)$")
-database:srem(bot_id.."DEV:Sudo:T", userid)
-Reply_Status(msg,userid,"reply","⌔︙تم تنزيله من المطور ثانويين")  
-return false 
-end
-if text == ("الثانويين") and DevBLACKBOTSS(msg) then
-local list = database:smembers(bot_id.."DEV:Sudo:T")
-t = "\n⌔︙قائمة مطورين الثانويين للبوت \n — — — — — — — — — \n"
-for k,v in pairs(list) do
-local username = database:get(bot_id.."BLACKBOTSS:User:Name" .. v)
-if username then
-t = t..""..k.."- ([@"..username.."])\n"
-else
-t = t..""..k.."- (`"..v.."`)\n"
-end
-end
-if #list == 0 then
-t = "⌔︙لا يوجد مطورين ثانويين"
-end
-send(msg.chat_id_, msg.id_, t)
-end
-if text == ("مسح الثانويين") and VIP_DeV(msg) then
-database:del(bot_id.."DEV:Sudo:T")
-send(msg.chat_id_, msg.id_, "\n⌔︙ تم مسح قائمة المطورين الثانويين  ")
-end
 if Sudo(msg) then
 if text ==('رفع مطور') and ChCheck(msg) then
 function sudo_reply(extra, result, success)
@@ -4762,6 +4672,7 @@ if msg.reply_to_message_id_ ~= 0 then
 if text and (text:match("^مسح$") or text:match("^حذف$")) and ChCheck(msg) then
 DeleteMessage(msg.chat_id_,{[0] = msg.reply_to_message_id_})
 DeleteMessage(msg.chat_id_,{[0] = msg.id_})
+Dev_Abs(msg.chat_id_, msg.id_, 1, '⌁︙تم حذف الرساله مع رسالة الامر', 1, 'md')
 end end end
 if Constructor(msg) then
 if text:match("^تفعيل الحظر$") and ChCheck(msg) or text:match("^تفعيل الطرد$") and ChCheck(msg) then
